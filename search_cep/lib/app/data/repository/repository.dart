@@ -1,0 +1,12 @@
+import 'package:meta/meta.dart';
+import 'package:search_cep/app/data/provider/api.dart';
+
+class MyRepository {
+  final MyApiClient apiClient;
+
+  MyRepository({@required this.apiClient}) : assert(apiClient != null);
+
+  getAll() {
+    return apiClient.getAll();
+  }
+}

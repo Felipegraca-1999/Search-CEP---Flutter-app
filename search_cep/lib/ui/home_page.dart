@@ -24,6 +24,8 @@ class HomePage extends StatelessWidget {
             ),
             Center(
               child: Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)),
                 shadowColor: Colors.black,
                 elevation: 5,
                 color: Colors.grey[200],
@@ -95,7 +97,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
